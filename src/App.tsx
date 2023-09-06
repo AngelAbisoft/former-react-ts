@@ -27,7 +27,7 @@ import AllegaIFile from "./components/carrello/components/AllegaIFile";import Ar
 import RichiediUnCampioneGratuitoPage from "./components/RichiediUnCampioneGratuito/pages/RichiediUnCampioneGratuitoPage";
 import CampioneGratuitoRichiestoPage from "./components/CampioneGratuitoRichiesto/pages/CampioneGratuitoRichiestoPage";
  "./components/carrello/components/AllegaIFile";
-
+import DettaglioLavoroPage from "./components/DettaglioLavoro/pages/DettaglioLavoroPage";
 
 function App() {
   const location = useLocation();
@@ -60,6 +60,8 @@ function App() {
           <Route path="/form-prodotto-v1/:idPrev/:idFormProd/:IdTipoCarta/:IdColoreStampa/:idFogli/:idUt/:idFustella/:idCategoria/:idBaseEtiquete/:idAltezaEtiquete" element={<FormProdottoModificated />} />
           <Route path="/form-prodotto-v2/:idPrev/:idFormProd/:IdTipoCarta/:IdColoreStampa/:idFogli/:idUt/:idFustella/:idCategoria/:idBaseEtiquete/:idAltezaEtiquete" element={<ConfiguraProdottoRefactor />} />
           <Route path="/carrello" element={<CarrelloProdotto/>}/>
+          <Route path="/dettaglio-lavoro" element={<DettaglioLavoroPage/>}/>
+
           
           <Route
             path="/OrdineDetails/:userId"
